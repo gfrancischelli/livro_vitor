@@ -1,0 +1,41 @@
+.cena4 {
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-image: url(../images/cena3a.png);
+}
+
+.cena4 #fundob{
+    opacity:0;
+    position: absolute;
+    left: 0%;
+    bottom: 0%;
+    width: 1000px;
+    height: 950px;
+
+  }
+
+  .cena4.is-visible #fundob{
+    animation: opacidade 4s, camera4 5s;
+    animation-fill-mode: forwards;
+    animation-delay: 1s, 5s;
+  }
+
+  @keyframes opacidade {
+    50%{
+      opacity: 0;
+    }
+
+  100%{
+      opacity: 1;
+    }
+  }
+
+  @keyframes camera4{
+    0%{
+      transform: translateY ( 0 );
+    }
+
+  100%{
+      transform: translateY( 300px );
+    }
+  }

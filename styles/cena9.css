@@ -1,0 +1,67 @@
+.cena9 {
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-image: url(../images/cena1fundo.png);
+}
+
+.cena9 #pai{
+    position: absolute;
+    left: 21%;
+    top: 76%;
+    width: 60px;
+    height: 60px;
+  }
+
+  .cena9 #joaosilh2{
+      position: absolute;
+      left: 45%;
+      top: 505px;
+      width: 50px;
+      height: 50px;
+  }
+
+  .cena9 #mariasilh2{
+      position: absolute;
+      left: 50%;
+      top: 507px;
+      width: 50px;
+      height: 50px;
+  }
+
+  .cena9.is-visible #joaosilh2{
+    animation: voltar 5s ;
+    animation-fill-mode: forwards;
+  }
+
+  .cena9.is-visible #mariasilh2{
+    animation: voltar 5s linear;
+    animation-fill-mode: forwards;
+  }
+  .cena9.is-visible #pai{
+    animation: paifim 5s;
+    animation-fill-mode: forwards;
+    animation-delay: 3s;
+  }
+
+  .cena9 #corvofly{
+      position: absolute;
+      left: -30px;
+      top: 30%;
+      width: 50px;
+      height: 50px;
+  }
+  .cena9.is-visible #corvofly{
+    animation: corvofly 4.5s ease-in;
+    animation-fill-mode: forwards;
+    animation-delay: 5s;
+  }
+
+  @keyframes voltar {
+    from { transform: translate( 0 );}
+    to   { transform: translate(-193px, -8px ); }
+  }
+
+  @keyframes paifim {
+    from { transform: translateX( 0 );}
+    to   { transform: translateX( 80px ); }
+  }

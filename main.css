@@ -1,0 +1,88 @@
+@import 'styles/cena1.css';
+@import 'styles/cena2.css';
+@import 'styles/cena3.css';
+@import 'styles/cena4.css';
+@import 'styles/cena5.css';
+@import 'styles/cena6.css';
+@import 'styles/cena7.css';
+@import 'styles/cena8.css';
+@import 'styles/cena8b.css';
+@import 'styles/cena9.css';
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 100vw;
+}
+
+body{
+	background-color: #121212;
+}
+
+.is-hidden {
+    opacity: 0 !important;
+}
+
+.is-visible {
+    opacity: 1 !important;
+    transition: all 1s ease-in;
+}
+
+.stage {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+	width: 1000px;
+	height: 650px;
+    overflow: hidden;
+	background-color: black;
+    color: white;
+    border: 5px solid black;
+}
+
+@media screen and (max-width: 640px) {
+    .stage {
+        top: 50%;
+        left: 50%;
+        transform: scale(0.5) translate(-50%, -50%);
+        transform-origin: 0 0;
+    }
+}
+
+.scene {
+    position: absolute;
+    top: 0;
+    left: 0;
+	width: 100%;
+	height: 100%;
+    padding: 50px;
+    transition: all 1s ease-in;
+}
+
+    .scene__title {
+        display: block;
+        margin: 0 auto;
+    }
+
+.texto{
+  margin-top: -20px;
+  padding: 10px;
+  background-color: hsla(360, 100%, 0%, 0.5);
+}
+
+.intro {
+    margin: -54px;
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-image: url(../images/intro.png);
+    position:absolute;
+    top: -60px;
+}

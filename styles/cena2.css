@@ -1,0 +1,36 @@
+.cena2 {
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-image: url(../images/cena1fundo.png);
+}
+
+    .cena2 #pai{
+        position: absolute;
+        left: 20%;
+        top: 76%;
+        width: 60px;
+        height: 60px;
+    }
+
+    .cena2 #mulher{
+        position: absolute;
+        left: 25%;
+        top: 77%;
+        width: 60px;
+        height: 60px;
+    }
+
+
+    .cena2.is-visible #pai{
+      animation: mover 5s;
+      animation-fill-mode: forwards;
+    }
+    .cena2.is-visible #mulher {
+        animation: mover 5s;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes mover {
+      from { transform: translate( 0 );}
+      to   { transform: translate(200px , 6px); }
+    }

@@ -1,0 +1,47 @@
+.cena8 {
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-image: url(../images/cena7.png);
+}
+
+.cena8 #bruxacostas{
+    position: absolute;
+    left: 42%;
+    top: 25%;
+  }
+
+  .cena8 #mariacostas{
+      position: absolute;
+      left: -190px;
+      top: 30%;
+    }
+
+    .cena8.is-visible #mariacostas{
+      animation: empurrar 3s;
+      animation-fill-mode: forwards;
+      animation-delay: 3s;
+    }
+
+    @keyframes empurrar {
+      0%{
+        transform: translateX( 0 );
+      }
+      100%{
+        transform: translateX( 590px );
+      }
+    }
+
+    .cena8.is-visible #bruxacostas{
+      animation: fogao 3s;
+      animation-fill-mode: forwards;
+      animation-delay: 2s;
+    }
+
+    @keyframes fogao {
+      0%{
+        transform: rotateX(0);
+      }
+      100%{
+        transform: rotateX(30deg);
+      }
+    }

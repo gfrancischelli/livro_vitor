@@ -1,0 +1,26 @@
+.cena8b {
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-image: url(../images/cena10.png);
+}
+
+.cena8b #porta{
+    position: absolute;
+    left: -75%;
+    top: -30%;
+}
+
+.cena8b.is-visible #porta{
+  animation: fechar 3s;
+  animation-fill-mode: forwards;
+  animation-delay: 2s;
+}
+
+@keyframes fechar {
+  0%{
+    transform: translateX(0);
+  }
+  100%{
+    transform: translateX(800px);
+  }
+}
